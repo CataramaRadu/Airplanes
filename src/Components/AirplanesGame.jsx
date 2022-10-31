@@ -34,6 +34,10 @@ class AirplanesGame extends Component {
         })
     }
 
+    isInputValid(x){
+        return Number.isInteger(x) && x >= 5
+    }
+
     render() {
         return (
             <>
@@ -46,10 +50,10 @@ class AirplanesGame extends Component {
                     <form>
                         <p>Generate a square of size <i>NxN</i></p>
                         <label>N = </label>
-                        <input type="text" value={this.state.numberOfCells}
+                        <input type="number" value={this.state.numberOfCells}
                                onChange={e => this.setState({numberOfCells: e.target.value})}/>
                         <div style={{marginTop: "1rem"}}>
-                            <button onClick={this.handleGameStart} disabled={this.state.numberOfCells < 5}>
+                            <button onClick={this.handleGameStart} disabled={!this.isInputValid(Number(this.state.numberOfCells))}>
                                 Start game
                             </button>
                         </div>

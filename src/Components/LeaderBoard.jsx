@@ -7,7 +7,6 @@ class LeaderBoard extends Component {
         return (
             <div className={"leaderboardPosition"}>
                 <div>
-
                     <h3 className={"leaderboardTitle"}>Leaderboard</h3>
                     <hr/>
                     <table>

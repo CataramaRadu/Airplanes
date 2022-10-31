@@ -128,7 +128,7 @@ class GameTable extends Component {
     render() {
         return (
             <div className={"sectionSpacer"}>
-                <span>Hit a square to drop a bomb!</span>
+                <p>Hit a square to drop a bomb!</p>
                 {this.renderTable()}
                 {this.state.isGameFinished && this.renderEndScreen()}
             </div>
