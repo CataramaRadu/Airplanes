@@ -19,9 +19,9 @@ class LeaderBoard extends Component {
                         </tr>
                         </thead>
                         <tbody>
-                        {this.props.plays.map(play => {
+                        {this.props.plays.map((play,idx) => {
                             return (
-                                <tr>
+                                <tr key={idx}>
                                     <td>{play.strikes}</td>
                                     <td>{play.duration}</td>
                                     <td>{play.startTime}</td>
