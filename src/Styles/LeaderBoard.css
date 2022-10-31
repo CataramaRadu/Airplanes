@@ -1,0 +1,18 @@
+.leaderboardPosition{
+    display: flex;
+    justify-content: center;
+}
+
+.leaderboardTitle{
+    text-align: left;
+    margin: 0;
+}
+.leaderboardHeader {
+    font-weight: bold;
+    font-style: italic;
+}
+.leaderboardCell {
+    margin:2rem;
+    padding: 1rem;
+}
+

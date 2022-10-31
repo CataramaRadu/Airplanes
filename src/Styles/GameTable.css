@@ -1,0 +1,38 @@
+.gameTableCell {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+
+}
+
+.gameTableCell:hover {
+    background: aliceblue;
+}
+
+.clickedCell {
+    background: orangered;
+}
+.clickedCell:hover {
+    background: red;
+}
+
+.targetHit {
+    background: lightgreen;
+}
+.targetHit:hover {
+    background: forestgreen;
+}
+
+.sectionSpacer{
+    margin-bottom: 4rem;
+    margin-top: 2rem
+}
+
+.tablePosition {
+    display: flex;
+    justify-content: center;
+}
+
+.endScreenText {
+    margin: 2rem 0;
+}
